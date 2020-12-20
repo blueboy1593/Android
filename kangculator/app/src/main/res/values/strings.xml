@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kangculator</string>
+    <string name="sign">부호</string>
 </resources>
