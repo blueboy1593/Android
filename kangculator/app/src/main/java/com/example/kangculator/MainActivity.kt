@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     var btnSub: Button? = null
     var btnMul: Button? = null
     var btnDiv: Button? = null
+    var btnClear: Button? = null
     var textResult: TextView? = null
     var num1: String? = null
     var num2: String? = null
@@ -35,17 +36,19 @@ class MainActivity : AppCompatActivity() {
         R.id.BtnNum9
     )
     var i = 0
+
     @SuppressLint("ClickableViewAccessibility", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        title = "초간단 계산기"
+        title = "Kang's 계산기"
         edit1 = findViewById<View>(R.id.Edit1) as EditText
         edit2 = findViewById<View>(R.id.Edit2) as EditText
         btnAdd = findViewById<View>(R.id.BtnAdd) as Button
         btnSub = findViewById<View>(R.id.BtnSub) as Button
         btnMul = findViewById<View>(R.id.BtnMul) as Button
         btnDiv = findViewById<View>(R.id.BtnDiv) as Button
+        btnClear = findViewById<View>(R.id.BtnClear) as Button
         textResult = findViewById<View>(R.id.TextResult) as TextView
         btnAdd!!.setOnTouchListener { arg0, arg1 ->
             num1 = edit1!!.text.toString()
@@ -75,6 +78,12 @@ class MainActivity : AppCompatActivity() {
             textResult!!.text = "계산 결과 : " + result.toString()
             false
         }
+        btnClear!!.setOnTouchListener { _, _ ->
+            edit1!!.text = null
+            edit2!!.text = null
+            false
+        }
+
         i = 0
         while (i < numBtnIDs.size) {
             numButtons[i] = findViewById<View>(numBtnIDs[i]) as Button
