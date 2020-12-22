@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BellsMemo</string>
+    <string name="bell_s_memo">Bell\'s Memo</string>
+    <string name="write_memo">Write Memo</string>
+    <string name="add_title">add_title</string>
+    <string name="title">제목</string>
+    <string name="add_note">새 노트</string>
+</resources>
