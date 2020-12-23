@@ -12,7 +12,7 @@
     <TextView
         app:layout_constraintHorizontal_weight=".7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/memoTime"
+        app:layout_constraintEnd_toStartOf="@+id/memoContent"
         android:id="@+id/memoTitle"
         android:layout_width="0dp"
         android:layout_height="72dp"
@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_weight=".3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/memoTitle"
-        android:id="@+id/memoTime"
+        android:id="@+id/memoContent"
         android:layout_width="0dp"
         android:layout_height="72dp"
         tools:text="time"
