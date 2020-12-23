@@ -10,4 +10,6 @@ interface RoomMemoDao {
     fun insert(memo: RoomMemo)
     @Delete
     fun delete(memo:RoomMemo)
+    @Update
+    fun update(memo: RoomMemo)
 }

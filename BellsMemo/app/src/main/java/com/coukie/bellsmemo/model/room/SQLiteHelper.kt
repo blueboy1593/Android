@@ -25,7 +25,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         val values = ContentValues()
         values.put("title", memo.title)
         values.put("content", memo.content)
-
+        println("여기는 insertMemo")
         val wd = writableDatabase
         wd.insert("memo", null, values)
         wd.close()
@@ -53,7 +53,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         val values = ContentValues()
         values.put("title", memo.title)
         values.put("content", memo.content)
-
+        println("여기는 updateMemo")
         val wd = writableDatabase
         wd.update("memo", values, "no = ${memo.no}", null)
         wd.close()
