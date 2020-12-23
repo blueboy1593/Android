@@ -21,6 +21,7 @@
         app:layout_constraintHorizontal_weight=".7"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
+        android:singleLine="true"
         tools:text="title" />
 
 
