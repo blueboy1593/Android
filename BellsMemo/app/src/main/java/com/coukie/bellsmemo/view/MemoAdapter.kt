@@ -49,7 +49,6 @@ class MemoAdapter() : RecyclerView.Adapter<MemoAdapter.ViewHolder>() {
         fun setMemo(memo: RoomMemo) {
             itemView.memoTitle.text = memo.title
             itemView.memoContent.text = memo.content
-
             this.savedMemo = memo
         }
     }

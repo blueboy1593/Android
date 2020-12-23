@@ -83,3 +83,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 //android:text="저장"
 //app:layout_constraintBottom_toBottomOf="parent"
 //app:layout_constraintEnd_toEndOf="parent" />
+
+
+//        writeMemo.setOnClickListener {
+//            val intent = Intent(this, WriteMemoActivity::class.java)
+//            startActivity(intent)
+//        }
+
+//                val intent = Intent(this, MainActivity::class.java)
+//                startActivity(intent)
