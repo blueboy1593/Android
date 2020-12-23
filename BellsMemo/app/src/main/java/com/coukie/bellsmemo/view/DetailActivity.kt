@@ -13,9 +13,12 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
-        println(this)
 
         titleMemo.text =intent.getStringExtra("title")
         contentMemo.text =intent.getStringExtra("content")
+
+        goMain2.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

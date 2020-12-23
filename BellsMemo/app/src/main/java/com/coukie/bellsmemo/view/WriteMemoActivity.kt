@@ -17,7 +17,6 @@ class WriteMemoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_writememo)
 
         goMain.setOnClickListener {
-            println("goMain clicked!!")
             onBackPressed()
         }
 

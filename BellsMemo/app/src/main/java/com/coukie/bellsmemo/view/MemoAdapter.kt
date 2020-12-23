@@ -1,5 +1,6 @@
 package com.coukie.bellsmemo.view
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,8 +36,15 @@ class MemoAdapter() : RecyclerView.Adapter<MemoAdapter.ViewHolder>() {
                 listData.remove(savedMemo)
                 notifyDataSetChanged()
             }
-        }
 
+            itemView.setOnClickListener {
+                val context = it.context
+                val intent = Intent(context, DetailActivity::class.java)
+                intent.putExtra("title", itemView.memoTitle.text)
+                intent.putExtra("content", itemView.memoContent.text)
+                context.startActivity(intent)
+            }
+        }
 
         fun setMemo(memo: RoomMemo) {
             itemView.memoTitle.text = memo.title

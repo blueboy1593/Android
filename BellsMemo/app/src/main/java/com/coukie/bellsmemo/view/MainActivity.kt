@@ -25,8 +25,6 @@ class MainActivity : AppCompatActivity() {
         adapter.listData.addAll(helper?.roomMemoDao()?.getAll() ?: mutableListOf())
         noterecyclerView.adapter = adapter
 
-
-
         writeMemo.setOnClickListener {
             val intent = Intent(this, WriteMemoActivity::class.java)
             startActivity(intent)
