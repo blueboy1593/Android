@@ -57,7 +57,7 @@
         android:layout_height="78dp">
 
         <TextView
-            android:id="@+id/titleTv"
+            android:id="@+id/titleMemo"
             app:layout_constraintStart_toStartOf="@+id/titleLayout"
             app:layout_constraintEnd_toStartOf="@+id/titleEt"
             app:layout_constraintHorizontal_weight=".15"
@@ -76,7 +76,7 @@
             android:paddingEnd="0dp"
             android:inputType="text"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/titleTv"
+            app:layout_constraintStart_toEndOf="@+id/titleMemo"
             app:layout_constraintEnd_toStartOf="@+id/view"
             app:layout_constraintHorizontal_weight=".8"
             android:layout_width="0dp"
