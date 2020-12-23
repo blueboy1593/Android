@@ -29,6 +29,14 @@ class MemoAdapter() : RecyclerView.Adapter<MemoAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var savedMemo: RoomMemo? = null
+        init {
+            itemView.buttonDelete.setOnClickListener {
+                helper?.roomMemoDao()?.delete(savedMemo!!)
+                listData.remove(savedMemo)
+                notifyDataSetChanged()
+            }
+        }
+
 
         fun setMemo(memo: RoomMemo) {
             itemView.memoTitle.text = memo.title

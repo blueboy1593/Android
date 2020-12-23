@@ -1,4 +1,4 @@
-package com.coukie.bellsmemo.view
+package com.coukie.bellsmemo.old_codes
 //
 //import android.content.Intent
 //import android.view.LayoutInflater

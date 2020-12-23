@@ -1,4 +1,7 @@
-package com.coukie.bellsmemo.view
+package com.coukie.bellsmemo.old_codes
+
+import com.coukie.bellsmemo.model.room.RoomMemo
+import kotlinx.android.synthetic.main.activity_main.*
 
 //import android.content.Intent
 //import androidx.appcompat.app.AppCompatActivity
@@ -40,3 +43,43 @@ package com.coukie.bellsmemo.view
 //        }
 //    }
 //}
+
+
+//buttonSave.setOnClickListener {
+//    if (editMemo.text.toString().isNotEmpty()){
+//        val memo = RoomMemo(editMemo.text.toString(), "요기는 컨텐츠")
+//        helper?.roomMemoDao()?.insert(memo)
+//
+//        adapter.listData.clear()
+//        adapter.listData.addAll(helper?.roomMemoDao()?.getAll() ?: mutableListOf())
+//        adapter.notifyDataSetChanged()
+//        editMemo.setText("")
+//    }
+//}
+
+//<EditText
+//android:id="@+id/editMemo"
+//android:layout_width="0dp"
+//android:layout_height="100dp"
+//android:layout_marginStart="8dp"
+//android:layout_marginLeft="8dp"
+//android:layout_marginEnd="8dp"
+//android:layout_marginRight="8dp"
+//android:layout_marginBottom="8dp"
+//android:ems="10"
+//android:hint="메모를 입력하세요"
+//android:inputType="textMultiLine"
+//app:layout_constraintBottom_toBottomOf="parent"
+//app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+//app:layout_constraintStart_toStartOf="parent" />
+//
+//<Button
+//android:id="@+id/buttonSave"
+//android:layout_width="wrap_content"
+//android:layout_height="100dp"
+//android:layout_marginEnd="8dp"
+//android:layout_marginRight="8dp"
+//android:layout_marginBottom="8dp"
+//android:text="저장"
+//app:layout_constraintBottom_toBottomOf="parent"
+//app:layout_constraintEnd_toEndOf="parent" />

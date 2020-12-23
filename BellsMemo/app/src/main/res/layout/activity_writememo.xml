@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/goMainIv"
+            android:id="@+id/goMain"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_arrow_back_black_24dp"
             android:scaleType="centerInside"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintBottom_toTopOf="@+id/todoContentEt"
+        app:layout_constraintBottom_toTopOf="@+id/contentEt"
         android:layout_width="0dp"
         android:layout_height="78dp">
 
@@ -90,25 +90,21 @@
             app:layout_constraintHorizontal_weight=".05"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <EditText
-        android:labelFor="@+id/todoContentEt"
-        android:id="@+id/todoContentEt"
-        android:inputType="textMultiLine"
-        android:padding="16dp"
-        android:hint="내용을 입력해주세요."
+        android:id="@+id/contentEt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/superLightGrey"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+        android:hint="메모를 작성하세요."
+        android:inputType="textMultiLine"
+        android:labelFor="@+id/contentEt"
+        android:padding="16dp"
         android:singleLine="false"
         android:textSize="16sp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
