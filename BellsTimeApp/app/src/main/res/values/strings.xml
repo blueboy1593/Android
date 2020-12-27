@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bell\'s Time App</string>
+    <string name="stopwatch">STOPWATCH</string>
+    <string name="timer">TIMER</string>
+</resources>
